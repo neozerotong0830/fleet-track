@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-sidebar: #1b3a2a;
+  --color-sidebar-active: #1e4a33;
+  --color-sidebar-border: #2d5a3e;
+  --color-page: #f3f4f6;
+  --color-ink: #111827;
+  --color-muted: #6b7280;
+  --color-line: #e5e7eb;
+  --color-brand: #16a34a;
+  --color-brand-dark: #15803d;
+  --color-brand-deep: #1b7a4f;
+  --font-sans: var(--font-inter);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #f3f4f6;
+  color: #111827;
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 8px;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #e8eef2;
+  font-family: inherit;
+  z-index: 0;
+}
+
+.leaflet-div-icon.site-marker,
+.leaflet-div-icon.asset-pin {
+  background: none;
+  border: none;
+}
